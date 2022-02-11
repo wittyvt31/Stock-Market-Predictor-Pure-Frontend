@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+  <title>GOAT-NIFTY IT</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" />
+  <link rel="icon" href="goat.png" />
+  <link rel="stylesheet" href="sidenav.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+
+  <link rel="stylesheet" href="navbar.css " />
+  <style>
+    
+    body {
+      font-family: "Lato", sans-serif;
+    }
+
+    .mySlides {
+      display: none;
+    }
+  </style>
+
+  <body>
+    <!-- Navbar -->
+    <div class="w3-top">
+      <div class="w3-bar w3-black w3-card">
+        <a
+          class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right"
+          href="javascript:void(0)"
+          onclick="myFunction()"
+          title="Toggle Navigation Menu"
+          ><i class="fa fa-bars"></i
+        ></a>
+        <a href="home.html" class="w3-bar-item w3-button w3-padding-large"
+          >HOME</a
+        >
+        <a
+          href="SectorInvestment.html"
+          class="w3-bar-item w3-button w3-padding-large w3-hide-small"
+          >SECTOR-INVESTMENT</a
+        >
+        <a
+          href="Calendar.html"
+          class="w3-bar-item w3-button w3-padding-large w3-hide-small"
+          >CALENDAR-TRADING</a
+        >
+        <a
+          href="L&R.html"
+          class="w3-bar-item w3-button w3-padding-large w3-hide-small"
+          >LOGIN & REGISTER</a
+        >
+        <div class="w3-dropdown-hover w3-hide-small">
+          <button class="w3-padding-large w3-button" title="More">
+            MORE <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="w3-dropdown-content w3-bar-block w3-card-4">
+            <a href="#" class="w3-bar-item w3-button">FAQ</a>
+            <a href="#" class="w3-bar-item w3-button">CONTACT US</a>
+            <a href="#" class="w3-bar-item w3-button">ABOUT</a>
+          </div>
+        </div>
+
+        <input class="searchbar" type="text" placeholder="Search any Stock" />
+        <a
+          href="index.html"
+          class="w3-padding-large w3-hover-red w3-hide-small w3-right"
+          ><i class="fa fa-user"></i
+        ></a>
+      </div>
+    </div>
+    <!-- Use any element to open the sidenav -->
+    <img
+      id="navButton"
+      onclick="openNav()"
+      src="menu.png"
+      alt=""
+      width="25px"
+      height="30px"
+    />
+
+     <!--Aaj-->
+     <div id="main">
+      <hr style="color: coral; width: 75%; margin: 0 12.5%" />
+      <h3
+        style="
+          text-align: center;
+          font-family: sans-serif;
+          background-color: gainsboro;
+          margin: 10px 35%;
+          border-radius: 10px;
+          box-shadow: 5px 5px;
+        "
+      >
+        Today
+      </h3>
+      <div class="w3-row-padding w3-padding-32" style="margin: 0 -16px">
+        <div class="w3-third w3-margin-bottom">
+          <div class="w3-container w3-white">
+            <p><b>HDFC</b></p>
+            <p>Calendar-Trading</p>
+            <p class="w3-opacity">Stock</p>
+            <p style="color: green">2,591.60</p>
+            <p style="color: blue">88%</p>
+            <button
+              class="w3-button w3-black w3-margin-bottom"
+              onclick="document.getElementById('ticketModal').style.display='block'"
+            >
+              Bought
+            </button>
+            <button class="w3-button w3-black w3-margin-bottom">
+              Description
+            </button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <div class="w3-container w3-white">
+            <p><b>BAJAJ AUTO</b></p>
+            <p>Calendar-Trading</p>
+            <p class="w3-opacity">Stock</p>
+            <p style="color: green">3,449.35</p>
+            <p style="color: blue">86%</p>
+            <button
+              class="w3-button w3-black w3-margin-bottom"
+              onclick="document.getElementById('ticketModal').style.display='block'"
+            >
+              Bought
+            </button>
+            <button class="w3-button w3-black w3-margin-bottom">
+              Description
+            </button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <div class="w3-container w3-white">
+            <p><b>RELIANCE</b></p>
+            <p>Calendar-Trading</p>
+            <p class="w3-opacity">Stock</p>
+            <p style="color: green">	2,489.90</p>
+            <p style="color: blue">81%</p>
+            <button
+              class="w3-button w3-black w3-margin-bottom"
+              onclick="document.getElementById('ticketModal').style.display='block'"
+            >
+              Bought
+            </button>
+            <button class="w3-button w3-black w3-margin-bottom">
+              Description
+            </button>
+          </div>
+        </div>
+      </div>
+
+    <!--a week-->
+    <div id="main">
+      <hr style="color: coral; width: 75%; margin: 0 12.5%" />
+      <h3
+        style="
+          text-align: center;
+          font-family: sans-serif;
+          background-color: gainsboro;
+          margin: 10px 35%;
+          border-radius: 10px;
+          box-shadow: 5px 5px;
+        "
+      >
+        1-week
+      </h3>
+      <div class="w3-row-padding w3-padding-32" style="margin: 0 -16px">
+        <div class="w3-third w3-margin-bottom">
+          <div class="w3-container w3-white">
+            <p><b>RELIANCE</b></p>
+            <p>Calendar-Trading</p>
+            <p class="w3-opacity">Stock</p>
+            <p style="color: green">2,489.90</p>
+            <p style="color: blue">89%</p>
+            <button
+              class="w3-button w3-black w3-margin-bottom"
+              
+            >
+              Bought
+            </button>
+            <button class="w3-button w3-black w3-margin-bottom">
+              Description
+            </button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <div class="w3-container w3-white">
+            <p><b><a href="NiftyIT.html" style="text-decoration: none;">HUL</a></b></p>
+            <p>Calendar-Trading</p>
+            <p class="w3-opacity">Stock</p>
+            <p style="color: green">2,295.655</p>
+            <p style="color: blue">81%</p>
+            <button
+            class="w3-button w3-black w3-margin-bottom" onclick="location.href='NiftyIT.html'")
+            
+            >
+            
+              Bought
+            
+            </button>
+            <button class="w3-button w3-black w3-margin-bottom">
+              Description
+            </button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <div class="w3-container w3-white">
+            <p><b>MARUTI SUZUKI</b></p>
+            <p>Calendar-Trading</p>
+            <p class="w3-opacity">Stock</p>
+            <p style="color: green">8,210.00</p>
+            <p style="color: blue">80%</p>
+            <button
+              class="w3-button w3-black w3-margin-bottom"
+              onclick="document.getElementById('ticketModal').style.display='block'"
+            >
+              Bought
+            </button>
+            <button class="w3-button w3-black w3-margin-bottom">
+              Description
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    </div>
+
+    <!--30-->
+    <div id="main">
+      <hr style="color: coral; width: 75%; margin: 0 12.5%" />
+      <h3
+        style="
+          text-align: center;
+          font-family: sans-serif;
+          background-color: gainsboro;
+          margin: 10px 35%;
+          border-radius: 10px;
+          box-shadow: 5px 5px;
+        "
+      >
+        30-days
+      </h3>
+      <div class="w3-row-padding w3-padding-32" style="margin: 0 -16px">
+        <div class="w3-third w3-margin-bottom">
+          <div class="w3-container w3-white">
+            <p><b>POWER GRID CORP</b></p>
+            <p>Calendar-Trading</p>
+            <p class="w3-opacity">Stock</p>
+            <p style="color: green">606.75</p>
+            <p style="color: blue">90%</p>
+            <button
+              class="w3-button w3-black w3-margin-bottom"
+              onclick="document.getElementById('ticketModal').style.display='block'"
+            >
+              Bought
+            </button>
+            <button class="w3-button w3-black w3-margin-bottom">
+              Description
+            </button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <div class="w3-container w3-white">
+            <p><b>L&T INFOTECH</b></p>
+            <p>Calendar-Trading</p>
+            <p class="w3-opacity">Stock</p>
+            <p style="color: green">6,514.00</p>
+            <p style="color: blue">76%</p>
+            <button
+              class="w3-button w3-black w3-margin-bottom"
+              onclick="document.getElementById('ticketModal').style.display='block'"
+            >
+              Bought
+            </button>
+            <button class="w3-button w3-black w3-margin-bottom">
+              Description
+            </button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <div class="w3-container w3-white">
+            <p><b>HCL TECH</b></p>
+            <p>Calendar-Trading</p>
+            <p class="w3-opacity">Stock</p>
+            <p style="color: green">1,168.60</p>
+            <p style="color: blue">71%</p>
+            <button
+              class="w3-button w3-black w3-margin-bottom"
+              onclick="document.getElementById('ticketModal').style.display='block'"
+            >
+              Bought
+            </button>
+            <button class="w3-button w3-black w3-margin-bottom">
+              Description
+            </button>
+          </div>
+        </div>
+      </div>
+        </div>
+      </div>
+    </div>
+
+     <!--100-->
+     <div id="main">
+      <hr style="color: coral; width: 75%; margin: 0 12.5%" />
+      <h3
+        style="
+          text-align: center;
+          font-family: sans-serif;
+          background-color: gainsboro;
+          margin: 10px 35%;
+          border-radius: 10px;
+          box-shadow: 5px 5px;
+        "
+      >
+        100-days
+      </h3>
+      <div class="w3-row-padding w3-padding-32" style="margin: 0 -16px">
+        <div class="w3-third w3-margin-bottom">
+          <div class="w3-container w3-white">
+            <p><b>HCL TECH</b></p>
+            <p>Calendar-Trading</p>
+            <p class="w3-opacity">Stock</p>
+            <p style="color: green">1,168.60</p>
+            <p style="color: blue">78%</p>
+            <button
+              class="w3-button w3-black w3-margin-bottom"
+              onclick="document.getElementById('ticketModal').style.display='block'"
+            >
+              Bought
+            </button>
+            <button class="w3-button w3-black w3-margin-bottom">
+              Description
+            </button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <div class="w3-container w3-white">
+            <p><b>ITC</b></p>
+            <p>Calendar-Trading</p>
+            <p class="w3-opacity">Stock</p>
+            <p style="color: green">1,785.05</p>
+            <p style="color: blue">66%</p>
+            <button
+              class="w3-button w3-black w3-margin-bottom"
+              onclick="document.getElementById('ticketModal').style.display='block'"
+            >
+              Bought
+            </button>
+            <button class="w3-button w3-black w3-margin-bottom">
+              Description
+            </button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <div class="w3-container w3-white">
+            <p><b>LARSEN</b></p>
+            <p>Calendar-Trading</p>
+            <p class="w3-opacity">Stock</p>
+            <p style="color: green">3,841.10</p>
+            <p style="color: blue">61%</p>
+            <button
+              class="w3-button w3-black w3-margin-bottom"
+              onclick="document.getElementById('ticketModal').style.display='block'"
+            >
+              Bought
+            </button>
+            <button class="w3-button w3-black w3-margin-bottom">
+              Description
+            </button>
+          </div>
+        </div>
+      </div>
+  </body>
+
+  <script src="Site.js"></script>
+</html>

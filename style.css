@@ -1,0 +1,309 @@
+@import url("https://fonts.googleapis.com/css?family=Krub:400,700");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  /* background: #202020; */
+  background-image: url("try5.webp");
+  font-family: "Krub", sans-serif;
+}
+
+#backBtn {
+  background-color: white;
+  position: relative;
+  left: 10px;
+  top: 10px;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+#backBtn:hover {
+  background-color: teal;
+  color: white;
+}
+
+#verified {
+  position: relative;
+  top: 25px;
+  left: 62px;
+  color: greenyellow;
+}
+
+.cardOne {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 250px;
+  height: 400px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px 5px rgba(0, 0, 0, 0.2);
+  background: #151515;
+  overflow: hidden;
+}
+.cardOne .ds-top {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 300px;
+  height: 80px;
+  background: crimson;
+  animation: dsTop 1.5s;
+}
+.cardOne .avatar-holder {
+  position: absolute;
+  margin: auto;
+  top: 40px;
+  right: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 5px #151515, inset 0 0 0 5px #000000,
+    inset 0 0 0 5px #000000, inset 0 0 0 5px #000000, inset 0 0 0 5px #000000;
+  background: white;
+  overflow: hidden;
+  animation: mvTop 1.5s;
+}
+.cardOne .avatar-holder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.cardOne .name {
+  position: absolute;
+  margin: auto;
+  top: -60px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: inherit;
+  height: 40px;
+  text-align: center;
+  animation: fadeIn 2s ease-in;
+}
+.cardOne .name a {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 18px;
+}
+.cardOne .name a:hover {
+  text-decoration: underline;
+  color: crimson;
+}
+.cardOne .name h6 {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: white;
+  width: 40px;
+}
+.cardOne .buttonOne {
+  position: absolute;
+  margin: auto;
+  padding: 8px;
+  top: 20px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: inherit;
+  height: 40px;
+  text-align: center;
+  animation: fadeIn 2s ease-in;
+  outline: none;
+}
+.cardOne .buttonOne a {
+  padding: 5px 20px;
+  border-radius: 10px;
+  color: white;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  font-size: 10px;
+  transition: all 1s;
+}
+.cardOne .buttonOne a:hover {
+  color: white;
+  background: crimson;
+}
+.cardOne .ds-info {
+  position: absolute;
+  margin: auto;
+  top: 120px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: inherit;
+  height: 40px;
+  display: flex;
+}
+.cardOne .ds-info .pens,
+.cardOne .ds-info .projects,
+.cardOne .ds-info .posts {
+  position: relative;
+  left: -300px;
+  width: calc(250px / 3);
+  text-align: center;
+  color: white;
+  animation: fadeInMove 2s;
+  animation-fill-mode: forwards;
+}
+.cardOne .ds-info .pens h6,
+.cardOne .ds-info .projects h6,
+.cardOne .ds-info .posts h6 {
+  text-transform: uppercase;
+  color: crimson;
+}
+.cardOne .ds-info .pens p,
+.cardOne .ds-info .projects p,
+.cardOne .ds-info .posts p {
+  font-size: 12px;
+}
+.cardOne .ds-info .ds:nth-of-type(2) {
+  animation-delay: 0.5s;
+}
+.cardOne .ds-info .ds:nth-of-type(1) {
+  animation-delay: 1s;
+}
+.cardOne .ds-skill {
+  position: absolute;
+  margin: auto;
+  bottom: 10px;
+  right: 0;
+  left: 0;
+  width: 200px;
+  height: 100px;
+  animation: mvBottom 1.5s;
+}
+.cardOne .ds-skill h6 {
+  margin-bottom: 5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: crimson;
+}
+.cardOne .ds-skill .skill h6 {
+  font-weight: 400;
+  font-size: 8px;
+  letter-spacing: 0.05em;
+  margin: 4px 0;
+  color: white;
+}
+.cardOne .ds-skill .skill .fab {
+  color: crimson;
+  font-size: 14px;
+}
+.cardOne .ds-skill .skill .bar {
+  height: 5px;
+  background: crimson;
+  text-align: right;
+}
+.cardOne .ds-skill .skill .bar p {
+  color: white;
+  font-size: 8px;
+  padding-top: 5px;
+  animation: fadeIn 5s;
+}
+.cardOne .ds-skill .skill .bar:hover {
+  background: white;
+}
+.cardOne .ds-skill .skill .bar-html {
+  width: 95%;
+  animation: htmlSkill 1s;
+  animation-delay: 0.4s;
+}
+.cardOne .ds-skill .skill .bar-css {
+  width: 90%;
+  animation: cssSkill 2s;
+  animation-delay: 0.4s;
+}
+.cardOne .ds-skill .skill .bar-js {
+  width: 75%;
+  animation: jsSkill 3s;
+  animation-delay: 0.4s;
+}
+
+@keyframes fadeInMove {
+  0% {
+    opacity: 0;
+    left: -300px;
+  }
+  100% {
+    opacity: 1;
+    left: 0;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes htmlSkill {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 95%;
+  }
+}
+@keyframes cssSkill {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 90%;
+  }
+}
+@keyframes jsSkill {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 75%;
+  }
+}
+@keyframes mvBottom {
+  0% {
+    bottom: -150px;
+  }
+  100% {
+    bottom: 10px;
+  }
+}
+@keyframes mvTop {
+  0% {
+    top: -150px;
+  }
+  100% {
+    top: 40px;
+  }
+}
+@keyframes dsTop {
+  0% {
+    top: -150px;
+  }
+  100% {
+    top: 0;
+  }
+}
+.following {
+  color: white;
+  background: crimson;
+}

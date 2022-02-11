@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<title>Hero Kyoto 26T Single Speed 18 inches Frame Mountain Bike</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+<link rel="stylesheet" href="product.css" />
+<link rel="icon" href="goat.png" />
+<style>
+  .mySlides {
+    display: none;
+  }
+</style>
+
+<body>
+  <!-- Navbar -->
+  <div class="w3-top">
+    <div class="w3-bar w3-black w3-card">
+      <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)"
+        onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      <a href="home.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+      <a href="PA.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PRODUCT AUCTION</a>
+      <a href="J&B.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">JOBS & SERVICES</a>
+      <a href="L&R.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">LOGIN & REGISTER</a>
+      <div class="w3-dropdown-hover w3-hide-small">
+        <button class="w3-padding-large w3-button" title="More">
+          MORE <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+          <a href="#" class="w3-bar-item w3-button">FAQ</a>
+          <a href="#" class="w3-bar-item w3-button">CONTACT US</a>
+          <a href="#" class="w3-bar-item w3-button">ABOUT</a>
+        </div>
+      </div>
+      <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i
+          class="fa fa-search"></i></a>
+      <a href="user.html" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-user"></i></a>
+    </div>
+  </div>
+  <!-- The Slideshow -->
+  <div class="show">
+    <div class="w3-container">
+      <h2 style="
+            text-align: center;
+            font-family: sans-serif;
+            background-color: black;
+            color: white;
+            margin: 25px 210px;
+            border-radius: 10px;
+            font-size: 150%;
+          ">
+        Hero Kyoto 26T Single Speed 18 inches Frame Mountain Bike
+      </h2>
+    </div>
+
+    <div class="w3-content" style="max-width: 800px">
+      <img class="mySlides" src="cycle.jpg" style="width: 100%" />
+      <img class="mySlides" src="cycle1.jpg" style="width: 100%" />
+      <img class="mySlides" src="cycle2.jpg" style="width: 100%" />
+      <!-- <iframe
+        class="mySlides"
+        src="cycleVid.mp4"
+        height="400px"
+        width="500px"
+        type="video/mp4"
+      ></iframe> -->
+      <img class="mySlides" src="cycle2.jpg" style="width: 100%" />
+    </div>
+
+
+
+
+
+    <div class="w3-center">
+      <div class="w3-section">
+        <button class="w3-button w3-light-grey" onclick="plusDivs(-1)">
+          ❮ Prev
+        </button>
+        <button class="w3-button w3-light-grey" onclick="plusDivs(1)">
+          Next ❯
+        </button>
+      </div>
+      <button class="w3-button demo" onclick="currentDiv(1)">1</button>
+      <button class="w3-button demo" onclick="currentDiv(2)">2</button>
+      <button class="w3-button demo" onclick="currentDiv(3)">3</button>
+      <button class="w3-button demo" onclick="currentDiv(4)">4</button>
+    </div>
+  </div>
+  <hr style="position:relative; top: 50px;">
+
+  <div class="w3-container w3-white">
+    <p style="margin-bottom: 10px;"><b>Till Sun 16 Jan 2022</b></p>
+    <p style="margin-bottom: 10px;" class="w3-opacity">Created by u/heroCycles<i class="fas fa-check-circle"></i></p>
+    <p style="margin-bottom: 10px;"><button
+        style="background-color: teal; padding: 5px; color: white; cursor: pointer; border-radius: 5px;">Initial Price was <b>16,000 INR</b></button>
+    </p>
+    <p style="margin-bottom: 10px; color: green">Verified </p>
+    <p style="margin-bottom: 10px; color: teal">15 Bids</p>
+    <p style="margin-bottom: 10px;">Average Price: 15000 INR</p>
+    <button class="w3-button w3-black w3-margin-bottom"
+      onclick="document.getElementById('ticketModal').style.display='block'" style="margin-bottom: 10px;">
+      18000 INR
+    </button>
+  </div>
+  </div>
+<hr style="position: relative; top: 30px; width: 75%; margin-left: 12.5%;">
+
+  <div class="rate">
+    <input type="radio" id="star5" name="rate" value="5" />
+    <label for="star5" title="text">5 stars</label>
+    <input type="radio" id="star4" name="rate" value="4" />
+    <label for="star4" title="text">4 stars</label>
+    <input type="radio" id="star3" name="rate" value="3" />
+    <label for="star3" title="text">3 stars</label>
+    <input type="radio" id="star2" name="rate" value="2" />
+    <label for="star2" title="text">2 stars</label>
+    <input type="radio" id="star1" name="rate" value="1" />
+    <label for="star1" title="text">1 star</label>
+  </div>
+
+  <div class="input_comment">
+    <input id="commentBox" type="text" placeholder="Share Your Review...">
+  </div>
+
+  <script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+      showDivs((slideIndex += n));
+    }
+
+    function currentDiv(n) {
+      showDivs((slideIndex = n));
+    }
+
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      if (n > x.length) {
+        slideIndex = 1;
+      }
+      if (n < 1) {
+        slideIndex = x.length;
+      }
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" w3-red", "");
+      }
+      x[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " w3-red";
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <title>LOGIN OR REGISTER</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" />
+  <link rel="stylesheet" href="site.css" />
+  <link rel="icon" href="goat.png" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <link rel="stylesheet" href="navbar.css " />
+  <style>
+    html {
+      background-image: url("try6.jpg");
+    }
+
+    body {
+      font-family: "Lato", sans-serif;
+    }
+  </style>
+
+  <body>
+    <!-- Navbar -->
+    <div class="w3-top">
+      <div class="w3-bar w3-black w3-card">
+        <a
+          class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right"
+          href="javascript:void(0)"
+          onclick="myFunction()"
+          title="Toggle Navigation Menu"
+          ><i class="fa fa-bars"></i
+        ></a>
+        <a href="home.html" class="w3-bar-item w3-button w3-padding-large"
+          >HOME</a
+        >
+        <a
+          href="SectorInvestment.html"
+          class="w3-bar-item w3-button w3-padding-large w3-hide-small"
+          >SECTOR-INVESTMENT</a
+        >
+        <a
+          href="Calendar.html"
+          class="w3-bar-item w3-button w3-padding-large w3-hide-small"
+          >CALENDAR-TRADING</a
+        >
+        <a
+          href="L&R.html"
+          class="w3-bar-item w3-button w3-padding-large w3-hide-small"
+          >LOGIN & REGISTER</a
+        >
+        <div class="w3-dropdown-hover w3-hide-small">
+          <button class="w3-padding-large w3-button" title="More">
+            MORE <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="w3-dropdown-content w3-bar-block w3-card-4">
+            <a href="#" class="w3-bar-item w3-button">FAQ</a>
+            <a href="#" class="w3-bar-item w3-button">CONTACT US</a>
+            <a href="#" class="w3-bar-item w3-button">ABOUT</a>
+          </div>
+        </div>
+
+        <input class="searchbar" type="text" placeholder="Search any Stock" />
+        <a
+          href="index.html"
+          class="w3-padding-large w3-hover-red w3-hide-small w3-right"
+          ><i class="fa fa-user"></i
+        ></a>
+      </div>
+    </div>
+
+    <!-- The Login Box -->
+    <div id="loginBox">
+      <span style="position: relative; top: 10px">LOGIN</span>
+      <hr style="width: 50%; position: relative; left: 25%" />
+
+      <form class="form">
+        <div style="margin: 10px">
+          <label for="fname">Username</label><br />
+          <input
+            style="margin: 5px"
+            type="text"
+            class="name"
+            name="fname"
+            placeholder="Enter Your ID"
+          /><br />
+        </div>
+
+        <div style="margin: 10px 0 15px">
+          <label for="lname">Password</label><br />
+          <input
+            style="margin: 5px"
+            type="password"
+            class="name"
+            name="lname"
+            placeholder="Enter Password"
+          />
+        </div>
+        <div>
+          <a href="home.html" id="loginButton"> Login </a>
+        </div>
+        <br />
+
+        <label
+          for="lname"
+          style="
+            font-family: sans-serif;
+            font-size: 12px;
+            color: white;
+            font-style: italic;
+            cursor: pointer;
+          "
+          font
+          >By continuing, you agree to <u> Our Conditions of Use.</u>
+        </label>
+        <br />
+        <label
+          for="lname"
+          style="
+            font-family: sans-serif;
+            font-size: 12px;
+            color: teal;
+            font-style: italic;
+            cursor: pointer;
+          "
+          font
+          ><u> Trouble Signing-in?</u>
+        </label>
+        <hr style="width: 50%; position: relative; left: 25%" />
+      </form>
+      <a id="reg" href="Register.html"><i>Yet to Register?</i></a>
+    </div>
+  </body>
+  <script src="Site.js"></script>
+</html>
